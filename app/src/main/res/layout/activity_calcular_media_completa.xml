@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobile.unisinos.br.tarefa3.CalcularMediaCompletaActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:scrollIndicators="right">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionGroup="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular média Completa"
+                    android:textStyle="bold"
+                    android:id="@+id/lbTitulo"
+                    android:paddingBottom="20dp"
+                    android:singleLine="false"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Km Inicial"
+                    android:id="@+id/lbKmInicial" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/edKmInicial"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Km Final"
+                    android:id="@+id/lbKmFinal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/edKmFinal"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abastecimento (L)"
+                    android:id="@+id/lbAbastecimento" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/edAbastecimento"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular"
+                        android:id="@+id/btCalcular" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limpar"
+                        android:id="@+id/btLimpar" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voltar"
+                        android:id="@+id/btVoltar" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
